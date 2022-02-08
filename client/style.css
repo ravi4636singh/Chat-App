@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root{
+    --redborder: 1px solid red;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+section{
+    background-color: white
+}
+
+section .container{
+    /* border: var(--redborder); */
+    width: 700px;
+    height: 100vh;
+    margin: auto;
+}
+
+section .container .header{
+    /* border: var(--redborder); */
+    background-color: rgb(97, 96, 96);
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.7rem;
+}
+
+section .container .header .logo{
+    width: 45px;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+}
+
+section .container .header .logo-name{
+    font-size: 1.5rem;
+    margin-left: .6rem;
+    text-transform: uppercase;
+}
+
+/* Message box */
+
+section .container .message-box{
+    /* border: var(--redborder); */
+    background-color: rgb(214, 212, 212);
+    width: 100%;
+    height: 86vh;
+    padding: 0.3rem 0px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+section .container .message-box .outgoing{
+    /* border: var(--redborder); */
+    margin-bottom: 0.4rem;
+    width: 40%;
+    align-self: flex-end;
+}
+
+/* section .container .message-box .right-side  */
+.name{
+    /* border: var(--redborder); */
+    display: inline-block;
+    border-radius: 4px;
+    padding: 0.1rem 0.5rem;
+    padding-bottom: 0px;
+    background-color: rgb(134, 241, 134);
+    font-size: 1.1rem;
+}
+
+/* section .container .message-box .right-side  */
+.message{
+    /* border: var(--redborder); */
+    background-color: darkcyan;
+    padding: 0.3rem 0.7rem;
+    color: white;
+}
+
+section .container .message-box .incoming{
+    /* border: var(--redborder); */
+    width: 40%;
+    margin-bottom: 0.4rem;
+    align-self: start-end;
+}
+
+/* Input Area */
+
+section .container form{
+    background-color: rgb(97, 96, 96);
+}
+
+section .container form .input{
+    font-size: 1.2rem;
+    border: none;
+    width: 90%;
+    padding: 0.3rem;
+    border-radius: 7px;
+    margin-left: 0.2rem;
+}
+
+section .container form .input:focus{
+    outline: none;
+}
+
+section .container form .send-btn{
+    font-size: 1.1rem;
+    border: none;
+    background-color: rgb(3, 3, 88);
+    color: white;
+    width: 8%;
+    padding: 0.4rem 0px;
+    cursor: pointer;
+    border-radius: 7px;
+}

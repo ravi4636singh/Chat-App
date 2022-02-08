@@ -1,0 +1,19 @@
+{
+  "name": "gupshup-app",
+  "version": "1.0.0",
+  "description": "Create Chat app using socket.io",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server",
+    "start": "node server.js"
+  },
+  "author": "Ravi Singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
