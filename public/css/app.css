@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* Variables */
+:root{
+    --black: #247881;
+    --gray: #43919b;
+    --green: #00ffc6;
+    --blue: #30aadd;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.home-section{
+    background-color: var(--gray);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 57%;
+}
+
+/* Header Section */
+.header{
+    background-color: var(--green);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+}
+
+.logo{
+    width: 41px;
+    height: auto;
+    border: none;
+    border-radius: 19px;
+}
+
+.logo-name{
+    font-size: 1.3rem;
+    margin-left: .6rem;
+    text-transform: capitalize;
+}
+
+/* Message box */
+.message-box{
+    background-color: var(--black);
+    width: 100%;
+    height: calc(100% - 91px);
+    padding: 0.3rem 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    overflow-y: auto;
+}
+
+/* Outgoing messages */
+.outgoing{
+    margin: .3rem 0;
+    width: max-content;
+    max-width: 48%;
+    align-self: flex-end;
+}
+
+.message-out{
+    background-color: var(--green);
+    padding: .2rem .8rem;
+    padding-right: 1.1rem;
+    margin-right: .1rem;
+    border-radius: 14px 0 20px 14px;
+}
+
+/* Incoming messages */
+.incoming{
+    margin: .3rem 0;
+    width: max-content;
+    max-width: 48%;
+    align-self: start-end;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.receiver-name{
+    background-color: var(--blue);
+    width: max-content;
+    max-width: 100%;
+    margin-left: 2px;
+    padding: 3px 8px;
+    border-radius: 16px;
+    font-size: .9rem;
+}
+
+.message-in{
+    background-color: var(--gray);
+    color: white;
+    padding: 0.2rem 0.8rem;
+    padding-left: 1.1rem;
+    margin-left: .1rem;
+    border-radius: 0 14px 14px 20px;
+}
+
+/* Input Section */
+.form{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.message{
+    flex-grow: 9;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 3px;
+    padding: .3rem .7rem;
+    outline: none;
+
+}
+
+.btn{
+    flex-grow: 1;
+    font-size: 1.1rem;
+    border: none;
+    background-color: var(--blue);
+    padding: .6rem 0;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 940px) {
+    .home-section{
+        background-color: white;
+        width: none;
+        height: none;
+        display: block;
+        justify-content: none;
+    }
+    
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* Header Section */
+    .header{
+        padding: .8rem .3rem;
+    }
+    
+    .logo-name{
+        font-size: 1.7rem;
+    }
+    
+    /* Message box */
+    .message-box{
+        height: calc(100% - 121px);
+        padding: .8rem 0;
+        font-size: 1.3rem;
+    }
+    
+    /* Outgoing messages */
+    .outgoing{
+        margin: .5rem 0;
+        max-width: 70%;
+    }
+    
+    .message-out{
+        margin-right: .1rem;
+        padding-right: 1.1rem;
+        border-radius: 14px 0 20px 14px;
+    }
+    
+    /* Incoming messages */
+    .incoming{
+        max-width: 70%;
+        margin: .5rem 0;
+    }
+    
+    .receiver-name{
+        font-size: 1.1rem;
+    }
+    
+    .message-in{
+        padding-left: 1.1rem;
+        margin-left: .1rem;
+        border-radius: 0 14px 14px 20px;
+    }
+    
+    /* Input Section */
+    .form{
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+    }
+    
+    .message{
+        flex-grow: 8;
+        font-size: 1.3rem;
+        padding: .4rem .7rem;
+    
+    }
+    
+    .btn{
+        flex-grow: 2;
+        font-size: 1.9rem;
+        padding: .6rem .3rem;
+    }
+}
